@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayanihan Relief Corps - Together We Rise</title>
+    <meta name="description" content="Bayanihan Relief Corps provides humanitarian assistance, disaster response, and community development across the Philippines.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <span class="logo-text">Bayanihan Relief Corps</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html" class="admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Emergency Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+        <div class="container">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span><strong>Urgent Appeal:</strong> Typhoon Sakura Relief Operations - Emergency supplies needed. <a href="#donate">Donate Now</a></span>
+            <button class="close-alert" id="closeAlert">&times;</button>
+        </div>
+    </div>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="assets/images/hero-carousel-01-Volunteers.jpg" alt="Volunteers distributing relief goods">
+                <div class="carousel-caption">
+                    <h1>Together, We Bring Hope</h1>
+                    <p>Supporting communities through humanitarian action and compassion</p>
+                    <a href="volunteer.html" class="btn btn-primary">Join Our Mission</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/images/hero-carousel-02-Medical team.jpg" alt="Medical team in action">
+                <div class="carousel-caption">
+                    <h1>Healthcare for Every Filipino</h1>
+                    <p>Mobile health services reaching the most vulnerable communities</p>
+                    <a href="programs.html" class="btn btn-primary">View Programs</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/images/hero-carousel-03-Blood donation.jpg" alt="Blood donation drive">
+                <div class="carousel-caption">
+                    <h1>Every Drop Saves Lives</h1>
+                    <p>Be a Blood Hero - Your donation can save up to three lives</p>
+                    <a href="programs.html#blood" class="btn btn-primary">Donate Blood</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="assets/images/hero-carousel-04-Emergency response.jpg" alt="Emergency response team">
+                <div class="carousel-caption">
+                    <h1>Ready When Disaster Strikes</h1>
+                    <p>24/7 emergency response teams across the Philippines</p>
+                    <a href="programs.html#disaster" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev" id="carouselPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control next" id="carouselNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+    </section>
+
+    <!-- Live Statistics -->
+    <section class="statistics-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-target="12847">0</div>
+                    <div class="stat-label">Active Volunteers</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-heart"></i>
+                    <div class="stat-number" data-target="284593">0</div>
+                    <div class="stat-label">Lives Impacted</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <div class="stat-number" data-target="1247">0</div>
+                    <div class="stat-label">Ongoing Programs</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div class="stat-number" data-target="81">0</div>
+                    <div class="stat-label">Provinces Reached</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Campaigns -->
+    <section class="campaigns-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Campaigns</h2>
+                <p>Join our current humanitarian efforts making a difference</p>
+            </div>
+            <div class="campaigns-grid">
+                <div class="campaign-card" data-campaign="typhoon">
+                    <img src="assets/images/Campaign Highlights-1-Typhoon relief operation.jpg" alt="Typhoon relief operation">
+                    <div class="campaign-content">
+                        <span class="campaign-badge urgent">Urgent</span>
+                        <h3>Typhoon Sakura Relief</h3>
+                        <p>Emergency response for 15,000 displaced families in Northern Luzon</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 68%"></div>
+                        </div>
+                        <div class="progress-info">
+                            <span><strong>₱3.4M</strong> raised</span>
+                            <span><strong>68%</strong> of ₱5M goal</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="openCampaignModal('typhoon')">Learn More</button>
+                    </div>
+                </div>
+                <div class="campaign-card" data-campaign="medical">
+                    <img src="assets/images/Campaign Highlights-2-Medical mission.jpg" alt="Medical mission">
+                    <div class="campaign-content">
+                        <span class="campaign-badge active">Active</span>
+                        <h3>Mobile Health Caravan</h3>
+                        <p>Bringing medical services to 50 remote barangays across Visayas</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <div class="progress-info">
+                            <span><strong>₱1.7M</strong> raised</span>
+                            <span><strong>85%</strong> of ₱2M goal</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="openCampaignModal('medical')">Learn More</button>
+                    </div>
+                </div>
+                <div class="campaign-card" data-campaign="livelihood">
+                    <img src="assets/images/Campaign Highlights-3-Completed livelihood project.jpg" alt="Livelihood project">
+                    <div class="campaign-content">
+                        <span class="campaign-badge success">Success</span>
+                        <h3>Kabuhayan Plus Program</h3>
+                        <p>Empowering 500 families with sustainable livelihood training</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill success" style="width: 100%"></div>
+                        </div>
+                        <div class="progress-info">
+                            <span><strong>₱1.2M</strong> raised</span>
+                            <span><strong>100%</strong> Complete</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="openCampaignModal('livelihood')">View Impact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Services -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive humanitarian assistance for communities in need</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-medical"></i>
+                    </div>
+                    <h3>Disaster Response</h3>
+                    <p>Immediate relief and recovery operations during natural calamities</p>
+                    <a href="programs.html#disaster" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Health Programs</h3>
+                    <p>Mobile clinics and medical missions for underserved areas</p>
+                    <a href="programs.html#health" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Blood Services</h3>
+                    <p>Blood donation drives and emergency blood supply management</p>
+                    <a href="programs.html#blood" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Livelihood Training</h3>
+                    <p>Skills development and entrepreneurship for sustainable recovery</p>
+                    <a href="programs.html#livelihood" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Youth Programs</h3>
+                    <p>Leadership training and volunteer opportunities for young Filipinos</p>
+                    <a href="programs.html#youth" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Wellness Support</h3>
+                    <p>Psychosocial services and mental health assistance</p>
+                    <a href="programs.html#wellness" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" id="donate">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Be Part of the Movement</h2>
+                <p>Your support transforms lives. Join thousands of Filipinos making a difference every day.</p>
+                <div class="cta-buttons">
+                    <a href="volunteer.html" class="btn btn-primary btn-large">Become a Volunteer</a>
+                    <a href="contact.html" class="btn btn-outline btn-large">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Modal -->
+    <div class="modal" id="campaignModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeCampaignModal()">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Bayanihan Relief Corps</span>
+                    </div>
+                    <p>Building resilient communities through compassion, solidarity, and humanitarian action.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="volunteer.html">Join as Volunteer</a></li>
+                        <li><a href="contact.html">Partner with Us</a></li>
+                        <li><a href="contact.html">Corporate Sponsorship</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Mabini Street, Ermita, Manila</li>
+                        <li><i class="fas fa-phone"></i> (02) 8123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bayanihanrelief.org</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bayanihan Relief Corps. All rights reserved. | Educational Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

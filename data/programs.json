@@ -1,0 +1,174 @@
+{
+  "organization": {
+    "name": "Bayanihan Relief Corps",
+    "tagline": "Together We Rise",
+    "founded": 2006,
+    "registration": "SEC Registration No. CN2006-12345",
+    "headquarters": "123 Mabini Street, Ermita, Manila 1000, Philippines",
+    "phone": "(02) 8123-4567",
+    "mobile": "+63 917 123 4567",
+    "email": "info@bayanihanrelief.org",
+    "website": "https://bayanihanrelief.org",
+    "emergencyHotline": "1-800-BAYANIHAN"
+  },
+  "programs": [
+    {
+      "id": "disaster",
+      "name": "Typhoon Response Unit",
+      "category": "emergency",
+      "shortDescription": "Rapid deployment teams providing immediate relief, search and rescue, and recovery support during natural disasters.",
+      "fullDescription": "Our Typhoon Response Unit is a highly trained team of volunteers equipped to respond within 24 hours of a disaster declaration. We provide emergency shelter, food distribution, medical assistance, and debris clearing operations.",
+      "image": "assets/images/Programs_Services Cards-1-Disaster response.jpg",
+      "services": [
+        "Emergency evacuation assistance and temporary shelter management",
+        "Relief goods distribution (food packs, hygiene kits, clothing)",
+        "Search and rescue operations in coordination with local authorities",
+        "Post-disaster assessment and recovery planning",
+        "Psychosocial first aid for trauma survivors"
+      ],
+      "statistics": {
+        "volunteers": 2450,
+        "locations": 45,
+        "familiesEvacuated": 15847,
+        "reliefPacks": 124500,
+        "totalAid": "₱45M"
+      },
+      "donationOptions": [
+        { "amount": 500, "purpose": "Emergency Kit" },
+        { "amount": 1000, "purpose": "Family Food Pack" },
+        { "amount": 5000, "purpose": "Shelter Materials" }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Mobile Health Caravan",
+      "category": "health",
+      "shortDescription": "Bringing quality healthcare to remote barangays through mobile medical missions and telemedicine services.",
+      "fullDescription": "The Mobile Health Caravan addresses healthcare gaps in underserved communities by deploying fully equipped medical units to remote areas. Our volunteer doctors, nurses, and paramedics provide free consultations, basic treatments, and health education.",
+      "image": "assets/images/Programs_Services Cards-2-Health services.jpeg",
+      "services": [
+        "General medical consultations and health screenings",
+        "Pediatric care and immunization programs",
+        "Dental checkups and basic treatments",
+        "Maternal health services and prenatal care",
+        "Free medicine distribution for common ailments",
+        "Health education and preventive care workshops"
+      ],
+      "statistics": {
+        "medicalStaff": 156,
+        "patientsTreated": 84302,
+        "medicalMissions": 156,
+        "barangaysReached": 72
+      },
+      "donationOptions": [
+        { "amount": 300, "purpose": "Medicine Pack" },
+        { "amount": 1500, "purpose": "Mobile Clinic Fuel" },
+        { "amount": 10000, "purpose": "Medical Equipment" }
+      ]
+    },
+    {
+      "id": "blood",
+      "name": "Blood Heroes Program",
+      "category": "health",
+      "shortDescription": "Maintaining critical blood supply through regular donation drives and emergency blood bank coordination.",
+      "fullDescription": "Blood Heroes addresses the critical shortage of blood supply in Philippine hospitals. We organize regular blood donation drives, maintain a database of volunteer donors, and coordinate emergency blood requests 24/7.",
+      "image": "assets/images/Programs_Services Cards-3-Blood program.jpeg",
+      "services": [
+        "Quarterly blood donation drives in major cities and universities",
+        "Mobile blood donation units for workplace and community drives",
+        "24/7 emergency blood request hotline and coordination",
+        "Donor registry and notification system for rare blood types",
+        "Blood typing and screening services",
+        "Health education on the importance of blood donation"
+      ],
+      "statistics": {
+        "bloodUnits": 34567,
+        "potentialLivesSaved": 103701,
+        "donationEvents": 245,
+        "registeredDonors": 8945
+      },
+      "donationOptions": [
+        { "amount": 2000, "purpose": "Blood Drive Equipment" },
+        { "amount": 5000, "purpose": "Mobile Unit Operations" }
+      ]
+    },
+    {
+      "id": "livelihood",
+      "name": "Kabuhayan Plus Program",
+      "category": "development",
+      "shortDescription": "Empowering disaster-affected families with skills training and entrepreneurship support for sustainable recovery.",
+      "fullDescription": "Kabuhayan Plus goes beyond immediate relief by providing disaster survivors with practical skills and business capital to rebuild their livelihoods. We offer training in various trades and provide starter kits to launch microenterprises.",
+      "image": "assets/images/Programs_Services Cards-4-Livelihood training.jpg",
+      "services": [
+        "Food processing and preservation techniques",
+        "Sewing, tailoring, and garment production",
+        "Small-scale agriculture and urban gardening",
+        "Handicrafts and artisan product development",
+        "Digital literacy and online selling platforms",
+        "Basic bookkeeping and business management"
+      ],
+      "statistics": {
+        "individualsTrained": 8642,
+        "businessesLaunched": 2145,
+        "successRate": "87%",
+        "averageMonthlyIncome": "₱8,500"
+      },
+      "donationOptions": [
+        { "amount": 1000, "purpose": "Training Materials" },
+        { "amount": 3000, "purpose": "Starter Kit" },
+        { "amount": 10000, "purpose": "Business Capital" }
+      ]
+    },
+    {
+      "id": "youth",
+      "name": "Youth Brigade Initiative",
+      "category": "youth",
+      "shortDescription": "Developing the next generation of humanitarian leaders through youth volunteer programs and leadership training.",
+      "fullDescription": "Youth Brigade mobilizes students and young professionals aged 15-30 to become active volunteers and community leaders. Through structured training and hands-on experience, we cultivate a culture of service among Filipino youth.",
+      "image": "assets/images/Programs_Services Cards-5-Youth volunteers.jpg",
+      "services": [
+        "First aid and disaster preparedness training",
+        "Community service projects and outreach programs",
+        "Environmental conservation and tree-planting initiatives",
+        "Peer education on health and wellness topics",
+        "Leadership development workshops and seminars",
+        "Youth-led fundraising and awareness campaigns"
+      ],
+      "statistics": {
+        "activeYouthMembers": 4567,
+        "serviceHours": 12450,
+        "schoolChapters": 156
+      },
+      "donationOptions": [
+        { "amount": 500, "purpose": "Training Materials" },
+        { "amount": 2000, "purpose": "Chapter Support" }
+      ]
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness & Psychosocial Support",
+      "category": "health",
+      "shortDescription": "Mental health services and psychosocial support for disaster survivors and vulnerable communities.",
+      "fullDescription": "Recognizing that disasters affect mental health as much as physical wellbeing, our Wellness program provides professional psychosocial support to help individuals and communities recover from trauma and build resilience.",
+      "image": "assets/images/Programs_Services Cards-6-Psychosocial support.jpg",
+      "services": [
+        "Individual and group counseling sessions",
+        "Psychological first aid training for frontliners",
+        "Stress management and coping skills workshops",
+        "Support groups for disaster survivors and families",
+        "Mental health awareness campaigns",
+        "Referral services to specialized mental health professionals"
+      ],
+      "statistics": {
+        "individualsCounseled": 3248,
+        "supportSessions": 456,
+        "trainedCounselors": 89
+      },
+      "donationOptions": [
+        { "amount": 500, "purpose": "Workshop Materials" },
+        { "amount": 2000, "purpose": "Counseling Session" },
+        { "amount": 5000, "purpose": "Training Program" }
+      ]
+    }
+  ]
+}

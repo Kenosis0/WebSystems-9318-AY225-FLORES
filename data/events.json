@@ -1,0 +1,193 @@
+{
+  "upcomingEvents": [
+    {
+      "id": "blood-mega-drive-2026",
+      "title": "Blood Heroes Mega Drive",
+      "category": "blood",
+      "date": "2026-02-18",
+      "displayDate": "February 18, 2026",
+      "time": "8:00 AM - 6:00 PM",
+      "location": "SM Manila, Events Center",
+      "description": "Join our largest blood donation drive of the year at SM Manila. Help us collect 1,000 blood units to replenish hospital supplies across Metro Manila.",
+      "image": "assets/images/Events-Campaigns Gallery-5-Blood drive event.jpeg",
+      "registered": 456,
+      "target": 1000,
+      "status": "upcoming"
+    },
+    {
+      "id": "first-aid-training-feb",
+      "title": "Basic First Aid & CPR Certification",
+      "category": "training",
+      "date": "2026-02-25",
+      "displayDate": "February 25-26, 2026",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "BRC Training Center, Quezon City",
+      "description": "Two-day comprehensive training on emergency first aid response and CPR techniques. Open to all volunteers and the general public. Certificate provided upon completion.",
+      "image": "assets/images/Events-Campaigns Gallery-4-School outreach.jpeg",
+      "registered": 78,
+      "target": 100,
+      "status": "upcoming"
+    },
+    {
+      "id": "run-for-relief-2026",
+      "title": "Run for Relief 2026",
+      "category": "fundraising",
+      "date": "2026-03-08",
+      "displayDate": "March 8, 2026",
+      "time": "5:00 AM Gun Start",
+      "location": "Rizal Park, Manila",
+      "description": "Annual charity run supporting our disaster response programs. Choose from 3K, 5K, or 10K categories. All proceeds go to typhoon relief operations.",
+      "image": "assets/images/Events-Campaigns Gallery-2-Fundraising activity.jpeg",
+      "registered": 2347,
+      "target": 5000,
+      "status": "upcoming"
+    },
+    {
+      "id": "feeding-program-mar",
+      "title": "Pakain at Pag-asa Feeding Program",
+      "category": "outreach",
+      "date": "2026-03-15",
+      "displayDate": "March 15, 2026",
+      "time": "7:00 AM - 2:00 PM",
+      "location": "Barangay 128, Tondo, Manila",
+      "description": "Monthly feeding program for 500 children in Tondo, Manila. Volunteers needed for meal preparation, distribution, and activities with kids.",
+      "image": "assets/images/Events-Campaigns Gallery-6-Relief distribution.jpg",
+      "registered": 45,
+      "target": 500,
+      "status": "upcoming"
+    },
+    {
+      "id": "disaster-drill-mar",
+      "title": "Disaster Preparedness Drill",
+      "category": "training",
+      "date": "2026-03-22",
+      "displayDate": "March 22, 2026",
+      "time": "8:00 AM - 4:00 PM",
+      "location": "BRC Training Grounds, Laguna",
+      "description": "Comprehensive earthquake and fire safety drill for volunteers. Learn evacuation procedures, search and rescue techniques, and emergency coordination protocols.",
+      "image": "assets/images/Events-Campaigns Gallery-3-Disaster drill.jpeg",
+      "registered": 134,
+      "target": 200,
+      "status": "upcoming"
+    },
+    {
+      "id": "health-day-caravan",
+      "title": "World Health Day Caravan",
+      "category": "outreach",
+      "date": "2026-04-05",
+      "displayDate": "April 5-7, 2026",
+      "time": "8:00 AM - 5:00 PM",
+      "location": "Various locations, Cavite",
+      "description": "Mobile health screening and awareness campaign across 5 barangays. Free BP monitoring, blood sugar tests, and health consultations for the community.",
+      "image": "assets/images/Events-Campaigns Gallery-8-Awareness campaign.jpg",
+      "registered": 89,
+      "target": 2000,
+      "status": "upcoming"
+    }
+  ],
+  "pastEvents": [
+    {
+      "id": "orientation2026",
+      "title": "Grand Volunteer Orientation 2026",
+      "category": "outreach",
+      "date": "2026-01-20",
+      "displayDate": "January 20, 2026",
+      "location": "Metro Manila Chapters",
+      "description": "Successfully onboarded 450 new volunteers across Metro Manila chapters. Thank you to all who joined our humanitarian mission!",
+      "image": "assets/images/Events-Campaigns Gallery-1-Community event.jpeg",
+      "attendees": 450,
+      "status": "past",
+      "galleryImages": [
+        "assets/images/Events-Campaigns Gallery-1-Community event.jpeg"
+      ]
+    },
+    {
+      "id": "typhoonSakura",
+      "title": "Typhoon Sakura Relief Operations",
+      "category": "disaster",
+      "date": "2025-12-01",
+      "displayDate": "December 2025",
+      "location": "Northern Luzon",
+      "description": "Deployed 680 volunteers, distributed 45,000 relief packs, and provided emergency shelter to 15,847 families in Northern Luzon.",
+      "image": "assets/images/Campaign Highlights-1-Typhoon relief operation.jpg",
+      "volunteers": 680,
+      "status": "past",
+      "galleryImages": [
+        "assets/images/Campaign Highlights-1-Typhoon relief operation.jpg",
+        "assets/images/Events-Campaigns Gallery-6-Relief distribution.jpg"
+      ]
+    },
+    {
+      "id": "awards2025",
+      "title": "Volunteer Excellence Awards 2025",
+      "category": "training",
+      "date": "2025-11-15",
+      "displayDate": "November 15, 2025",
+      "location": "BRC National Headquarters, Manila",
+      "description": "Recognized 156 outstanding volunteers for their exceptional service. Presented certificates and awards for achievements in humanitarian work.",
+      "image": "assets/images/Events-Campaigns Gallery-7-Community celebration.jpg",
+      "awardees": 156,
+      "status": "past",
+      "galleryImages": [
+        "assets/images/Events-Campaigns Gallery-7-Community celebration.jpg",
+        "assets/images/Campaign Highlights-4-Volunteer milestone.jpg"
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "typhoon",
+      "title": "Typhoon Sakura Relief Operations",
+      "badge": "Urgent",
+      "badgeType": "urgent",
+      "image": "assets/images/Campaign Highlights-1-Typhoon relief operation.jpg",
+      "shortDescription": "Emergency response for 15,000 displaced families in Northern Luzon",
+      "raised": 3400000,
+      "goal": 5000000,
+      "percentComplete": 68,
+      "impact": {
+        "Families Evacuated": "15,847",
+        "Relief Packs Distributed": "124,500",
+        "Medical Consultations": "8,234",
+        "Temporary Shelters": "45"
+      },
+      "needs": "We urgently need continued support for housing reconstruction materials, livelihood programs, and psychosocial services."
+    },
+    {
+      "id": "medical",
+      "title": "Mobile Health Caravan 2026",
+      "badge": "Active",
+      "badgeType": "active",
+      "image": "assets/images/Campaign Highlights-2-Medical mission.jpg",
+      "shortDescription": "Bringing medical services to 50 remote barangays across Visayas",
+      "raised": 1700000,
+      "goal": 2000000,
+      "percentComplete": 85,
+      "impact": {
+        "Patients Treated": "12,456",
+        "Barangays Visited": "38 of 50",
+        "Medical Missions": "156",
+        "Medicines Distributed": "₱2.3M worth"
+      },
+      "needs": "Help us reach our goal of 50 barangays by supporting mobile clinic operations, medical supplies, and volunteer doctor honoraria."
+    },
+    {
+      "id": "livelihood",
+      "title": "Kabuhayan Plus Success Stories",
+      "badge": "Success",
+      "badgeType": "success",
+      "image": "assets/images/Campaign Highlights-3-Completed livelihood project.jpg",
+      "shortDescription": "Empowering 500 families with sustainable livelihood training",
+      "raised": 1200000,
+      "goal": 1200000,
+      "percentComplete": 100,
+      "impact": {
+        "Beneficiaries Trained": "500",
+        "Businesses Launched": "387",
+        "Still Operating": "87%",
+        "Average Monthly Income": "₱8,500"
+      },
+      "needs": "Program complete! 100% funded. Thank you to all our donors and partners who made this transformation possible."
+    }
+  ]
+}

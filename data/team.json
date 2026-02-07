@@ -1,0 +1,174 @@
+{
+  "leadership": [
+    {
+      "id": 1,
+      "name": "Dr. Maria Elena Santos",
+      "position": "Executive Director",
+      "image": "assets/images/Leadership Team-1-Dr. Maria Elena Santos - Executive Director.jpg",
+      "bio": "A public health specialist with over 20 years of experience in humanitarian organizations. Dr. Santos previously served as Regional Director of WHO Philippines and has led relief operations across Southeast Asia.",
+      "credentials": [
+        "Doctor of Public Health, University of the Philippines",
+        "Master of Public Administration, Ateneo de Manila",
+        "Licensed Medical Practitioner"
+      ],
+      "socialLinks": {
+        "linkedin": "#",
+        "email": "msantos@bayanihanrelief.org"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Atty. Roberto Cruz",
+      "position": "Director of Operations",
+      "image": "assets/images/Leadership Team-2-Atty. Roberto Cruz - Director of Operations.jpg",
+      "bio": "Former military officer turned humanitarian leader. Atty. Cruz brings 15 years of disaster management expertise, having coordinated relief operations for typhoons Haiyan, Mangkhut, and Odette.",
+      "credentials": [
+        "Juris Doctor, San Beda College of Law",
+        "BS Military Science, Philippine Military Academy",
+        "Certified Disaster Risk Management Professional"
+      ],
+      "socialLinks": {
+        "linkedin": "#",
+        "email": "rcruz@bayanihanrelief.org"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Prof. Isabella Reyes",
+      "position": "Head of Programs",
+      "image": "assets/images/Leadership Team-3-Prof. Isabella Reyes - Head of Programs.jpeg",
+      "bio": "An award-winning social worker and professor specializing in community development. Prof. Reyes designed the Kabuhayan Plus framework that has been adopted by partner organizations nationwide.",
+      "credentials": [
+        "PhD Community Development, De La Salle University",
+        "Registered Social Worker",
+        "National Volunteer Service Award Recipient (2022)"
+      ],
+      "socialLinks": {
+        "linkedin": "#",
+        "email": "ireyes@bayanihanrelief.org"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Engr. Carlos Mendoza",
+      "position": "Volunteer Coordinator",
+      "image": "assets/images/Leadership Team-4-Engr. Carlos Mendoza - Volunteer Coordinator.jpg",
+      "bio": "A civil engineer who manages the network of 12,847 volunteers nationwide. Engr. Mendoza developed the BRC volunteer management system and training curriculum used across all chapters.",
+      "credentials": [
+        "BS Civil Engineering, Mapua University",
+        "Project Management Professional (PMP)",
+        "Certified Volunteer Administrator (CVA)"
+      ],
+      "socialLinks": {
+        "linkedin": "#",
+        "email": "cmendoza@bayanihanrelief.org"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "year": 2006,
+      "title": "Foundation",
+      "description": "Bayanihan Relief Corps was established by a group of Filipino volunteers in Manila, inspired by the bayanihan spirit of community solidarity."
+    },
+    {
+      "year": 2009,
+      "title": "Typhoon Ondoy Response",
+      "description": "Mobilized first major disaster response operation, deploying 200 volunteers and reaching 5,000 affected families in Metro Manila and Rizal."
+    },
+    {
+      "year": 2013,
+      "title": "Typhoon Haiyan Operations",
+      "description": "Largest relief operation to date. Deployed 1,500+ volunteers across Eastern Visayas, distributed 250,000 relief packs, and established 25 emergency shelters."
+    },
+    {
+      "year": 2016,
+      "title": "National Expansion",
+      "description": "Established regional offices in Cebu and Davao. Launched the Mobile Health Caravan and Youth Brigade programs to expand services beyond disaster response."
+    },
+    {
+      "year": 2020,
+      "title": "Pandemic Response",
+      "description": "Pivoted operations to support COVID-19 frontliners and vulnerable communities. Distributed 500,000 PPE kits and supported community food pantries nationwide."
+    },
+    {
+      "year": 2023,
+      "title": "Digital Transformation",
+      "description": "Launched online volunteer management system, virtual training programs, and the Blood Heroes mobile app for emergency blood requests."
+    },
+    {
+      "year": 2026,
+      "title": "20th Anniversary & Beyond",
+      "description": "Celebrating 20 years of humanitarian service with 12,847 active volunteers, operations in 81 provinces, and a renewed commitment to community resilience."
+    }
+  ],
+  "missionVisionValues": {
+    "mission": "To protect lives and livelihoods of the most vulnerable Filipino communities through timely humanitarian assistance, disaster preparedness, and sustainable development programs.",
+    "vision": "A resilient Philippines where every community has the capacity to prepare for, respond to, and recover from disasters and crises — united by the spirit of Bayanihan.",
+    "values": [
+      {
+        "name": "Malasakit (Compassion)",
+        "description": "We act with genuine concern and empathy for those we serve, treating every individual with dignity and respect.",
+        "icon": "fas fa-heart"
+      },
+      {
+        "name": "Pagkakaisa (Unity)",
+        "description": "We believe in the power of community — working together across cultures, sectors, and boundaries to achieve common goals.",
+        "icon": "fas fa-people-carry-box"
+      },
+      {
+        "name": "Katapatan (Integrity)",
+        "description": "We uphold transparency, accountability, and ethical standards in every aspect of our operations and stewardship.",
+        "icon": "fas fa-shield-alt"
+      },
+      {
+        "name": "Katatagan (Resilience)",
+        "description": "We empower communities to build their own capacity for preparedness and recovery, fostering long-term self-reliance.",
+        "icon": "fas fa-mountain"
+      }
+    ]
+  },
+  "statistics": {
+    "activeVolunteers": 12847,
+    "livesImpacted": 284593,
+    "ongoingPrograms": 1247,
+    "provincesReached": 81,
+    "volunteerHours": 487562,
+    "activitiesCompleted": 2456,
+    "certificationsIssued": 8945
+  },
+  "regionalOffices": [
+    {
+      "name": "National Headquarters",
+      "city": "Manila",
+      "address": "123 Mabini Street, Ermita, Manila 1000",
+      "phone": "(02) 8123-4567",
+      "email": "info@bayanihanrelief.org",
+      "coordinates": [14.5995, 120.9842]
+    },
+    {
+      "name": "Luzon Regional Office",
+      "city": "Quezon City",
+      "address": "456 Commonwealth Avenue, Quezon City",
+      "phone": "(02) 8234-5678",
+      "email": "luzon@bayanihanrelief.org",
+      "coordinates": [14.6760, 121.0437]
+    },
+    {
+      "name": "Visayas Regional Office",
+      "city": "Cebu City",
+      "address": "789 Osmeña Boulevard, Cebu City",
+      "phone": "(032) 234-5678",
+      "email": "visayas@bayanihanrelief.org",
+      "coordinates": [10.3157, 123.8854]
+    },
+    {
+      "name": "Mindanao Regional Office",
+      "city": "Davao City",
+      "address": "321 J.P. Laurel Avenue, Davao City",
+      "phone": "(082) 234-5678",
+      "email": "mindanao@bayanihanrelief.org",
+      "coordinates": [7.1907, 125.4553]
+    }
+  ]
+}

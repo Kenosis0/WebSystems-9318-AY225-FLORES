@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Bayanihan Relief Corps</title>
+    <meta name="description" content="Explore our comprehensive humanitarian programs serving communities across the Philippines.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <span class="logo-text">Bayanihan Relief Corps</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html" class="admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Programs & Services</h1>
+            <p>Comprehensive humanitarian assistance addressing community needs</p>
+        </div>
+    </section>
+
+    <!-- Program Filters -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Programs</button>
+                <button class="filter-btn" data-filter="emergency">Emergency Response</button>
+                <button class="filter-btn" data-filter="health">Health Services</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="youth">Youth</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Grid -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="programs-grid">
+                <!-- Disaster Response Program -->
+                <div class="program-card" data-category="emergency" id="disaster">
+                    <div class="program-image">
+                        <img src="assets/images/Programs_Services Cards-1-Disaster response.jpg" alt="Disaster Response">
+                        <span class="program-badge emergency">Emergency</span>
+                    </div>
+                    <div class="program-content">
+                        <h3>Typhoon Response Unit</h3>
+                        <p class="program-excerpt">Rapid deployment teams providing immediate relief, search and rescue, and recovery support during natural disasters.</p>
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>2,450 Volunteers</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>45 Locations</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary expand-btn" onclick="toggleProgramDetails(this)">
+                            Learn More <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="program-details">
+                            <h4>Program Overview</h4>
+                            <p>Our Typhoon Response Unit is a highly trained team of volunteers equipped to respond within 24 hours of a disaster declaration. We provide emergency shelter, food distribution, medical assistance, and debris clearing operations.</p>
+                            
+                            <h4>Key Services</h4>
+                            <ul>
+                                <li>Emergency evacuation assistance and temporary shelter management</li>
+                                <li>Relief goods distribution (food packs, hygiene kits, clothing)</li>
+                                <li>Search and rescue operations in coordination with local authorities</li>
+                                <li>Post-disaster assessment and recovery planning</li>
+                                <li>Psychosocial first aid for trauma survivors</li>
+                            </ul>
+
+                            <h4>Impact Statistics (2025)</h4>
+                            <div class="impact-metrics">
+                                <div class="metric-box">
+                                    <strong>15,847</strong>
+                                    <span>Families Evacuated</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>124,500</strong>
+                                    <span>Relief Packs Distributed</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>₱45M</strong>
+                                    <span>Aid Delivered</span>
+                                </div>
+                            </div>
+
+                            <h4>Support This Program</h4>
+                            <div class="donation-options">
+                                <button class="donate-option" onclick="allocateDonation('disaster', 500)">₱500 - Emergency Kit</button>
+                                <button class="donate-option" onclick="allocateDonation('disaster', 1000)">₱1,000 - Family Food Pack</button>
+                                <button class="donate-option" onclick="allocateDonation('disaster', 5000)">₱5,000 - Shelter Materials</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Services Program -->
+                <div class="program-card" data-category="health" id="health">
+                    <div class="program-image">
+                        <img src="assets/images/Programs_Services Cards-2-Health services.jpeg" alt="Mobile Health Caravan">
+                        <span class="program-badge health">Health</span>
+                    </div>
+                    <div class="program-content">
+                        <h3>Mobile Health Caravan</h3>
+                        <p class="program-excerpt">Bringing quality healthcare to remote barangays through mobile medical missions and telemedicine services.</p>
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-user-md"></i>
+                                <span>156 Medical Staff</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>84,302 Patients</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary expand-btn" onclick="toggleProgramDetails(this)">
+                            Learn More <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="program-details">
+                            <h4>Program Overview</h4>
+                            <p>The Mobile Health Caravan addresses healthcare gaps in underserved communities by deploying fully equipped medical units to remote areas. Our volunteer doctors, nurses, and paramedics provide free consultations, basic treatments, and health education.</p>
+                            
+                            <h4>Services Offered</h4>
+                            <ul>
+                                <li>General medical consultations and health screenings</li>
+                                <li>Pediatric care and immunization programs</li>
+                                <li>Dental checkups and basic treatments</li>
+                                <li>Maternal health services and prenatal care</li>
+                                <li>Free medicine distribution for common ailments</li>
+                                <li>Health education and preventive care workshops</li>
+                            </ul>
+
+                            <h4>2025 Achievements</h4>
+                            <div class="impact-metrics">
+                                <div class="metric-box">
+                                    <strong>84,302</strong>
+                                    <span>Patients Treated</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>156</strong>
+                                    <span>Medical Missions</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>72</strong>
+                                    <span>Barangays Reached</span>
+                                </div>
+                            </div>
+
+                            <h4>Support Healthcare Access</h4>
+                            <div class="donation-options">
+                                <button class="donate-option" onclick="allocateDonation('health', 300)">₱300 - Medicine Pack</button>
+                                <button class="donate-option" onclick="allocateDonation('health', 1500)">₱1,500 - Mobile Clinic Fuel</button>
+                                <button class="donate-option" onclick="allocateDonation('health', 10000)">₱10,000 - Medical Equipment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blood Program -->
+                <div class="program-card" data-category="health" id="blood">
+                    <div class="program-image">
+                        <img src="assets/images/Programs_Services Cards-3-Blood program.jpeg" alt="Blood Heroes Program">
+                        <span class="program-badge health">Health</span>
+                    </div>
+                    <div class="program-content">
+                        <h3>Blood Heroes Program</h3>
+                        <p class="program-excerpt">Maintaining critical blood supply through regular donation drives and emergency blood bank coordination.</p>
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-tint"></i>
+                                <span>34,567 Units</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-user-plus"></i>
+                                <span>8,945 Donors</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary expand-btn" onclick="toggleProgramDetails(this)">
+                            Learn More <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="program-details">
+                            <h4>Program Overview</h4>
+                            <p>Blood Heroes addresses the critical shortage of blood supply in Philippine hospitals. We organize regular blood donation drives, maintain a database of volunteer donors, and coordinate emergency blood requests 24/7.</p>
+                            
+                            <h4>How It Works</h4>
+                            <ul>
+                                <li>Quarterly blood donation drives in major cities and universities</li>
+                                <li>Mobile blood donation units for workplace and community drives</li>
+                                <li>24/7 emergency blood request hotline and coordination</li>
+                                <li>Donor registry and notification system for rare blood types</li>
+                                <li>Blood typing and screening services</li>
+                                <li>Health education on the importance of blood donation</li>
+                            </ul>
+
+                            <h4>Program Impact</h4>
+                            <div class="impact-metrics">
+                                <div class="metric-box">
+                                    <strong>34,567</strong>
+                                    <span>Blood Units Collected</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>103,701</strong>
+                                    <span>Potential Lives Saved</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>245</strong>
+                                    <span>Donation Events</span>
+                                </div>
+                            </div>
+
+                            <h4>Become a Blood Hero</h4>
+                            <div class="donation-options">
+                                <button class="donate-option" onclick="window.location.href='volunteer.html'">Register as Donor</button>
+                                <button class="donate-option" onclick="allocateDonation('blood', 2000)">₱2,000 - Blood Drive Equipment</button>
+                                <button class="donate-option" onclick="allocateDonation('blood', 5000)">₱5,000 - Mobile Unit Operations</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Livelihood Program -->
+                <div class="program-card" data-category="development" id="livelihood">
+                    <div class="program-image">
+                        <img src="assets/images/Programs_Services Cards-4-Livelihood training.jpg" alt="Kabuhayan Plus Program">
+                        <span class="program-badge development">Development</span>
+                    </div>
+                    <div class="program-content">
+                        <h3>Kabuhayan Plus Program</h3>
+                        <p class="program-excerpt">Empowering disaster-affected families with skills training and entrepreneurship support for sustainable recovery.</p>
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>8,642 Trained</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>87% Success Rate</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary expand-btn" onclick="toggleProgramDetails(this)">
+                            Learn More <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="program-details">
+                            <h4>Program Overview</h4>
+                            <p>Kabuhayan Plus goes beyond immediate relief by providing disaster survivors with practical skills and business capital to rebuild their livelihoods. We offer training in various trades and provide starter kits to launch microenterprises.</p>
+                            
+                            <h4>Training Programs</h4>
+                            <ul>
+                                <li>Food processing and preservation techniques</li>
+                                <li>Sewing, tailoring, and garment production</li>
+                                <li>Small-scale agriculture and urban gardening</li>
+                                <li>Handicrafts and artisan product development</li>
+                                <li>Digital literacy and online selling platforms</li>
+                                <li>Basic bookkeeping and business management</li>
+                            </ul>
+
+                            <h4>Success Stories</h4>
+                            <div class="impact-metrics">
+                                <div class="metric-box">
+                                    <strong>8,642</strong>
+                                    <span>Individuals Trained</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>2,145</strong>
+                                    <span>Businesses Launched</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>87%</strong>
+                                    <span>Still Operating</span>
+                                </div>
+                            </div>
+
+                            <h4>Support Livelihood Programs</h4>
+                            <div class="donation-options">
+                                <button class="donate-option" onclick="allocateDonation('livelihood', 1000)">₱1,000 - Training Materials</button>
+                                <button class="donate-option" onclick="allocateDonation('livelihood', 3000)">₱3,000 - Starter Kit</button>
+                                <button class="donate-option" onclick="allocateDonation('livelihood', 10000)">₱10,000 - Business Capital</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Youth Program -->
+                <div class="program-card" data-category="youth" id="youth">
+                    <div class="program-image">
+                        <img src="assets/images/Programs_Services Cards-5-Youth volunteers.jpg" alt="Youth Brigade">
+                        <span class="program-badge youth">Youth</span>
+                    </div>
+                    <div class="program-content">
+                        <h3>Youth Brigade Initiative</h3>
+                        <p class="program-excerpt">Developing the next generation of humanitarian leaders through youth volunteer programs and leadership training.</p>
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-child"></i>
+                                <span>4,567 Youth</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-award"></i>
+                                <span>156 Chapters</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary expand-btn" onclick="toggleProgramDetails(this)">
+                            Learn More <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="program-details">
+                            <h4>Program Overview</h4>
+                            <p>Youth Brigade mobilizes students and young professionals aged 15-30 to become active volunteers and community leaders. Through structured training and hands-on experience, we cultivate a culture of service among Filipino youth.</p>
+                            
+                            <h4>Youth Activities</h4>
+                            <ul>
+                                <li>First aid and disaster preparedness training</li>
+                                <li>Community service projects and outreach programs</li>
+                                <li>Environmental conservation and tree-planting initiatives</li>
+                                <li>Peer education on health and wellness topics</li>
+                                <li>Leadership development workshops and seminars</li>
+                                <li>Youth-led fundraising and awareness campaigns</li>
+                            </ul>
+
+                            <h4>Youth Impact</h4>
+                            <div class="impact-metrics">
+                                <div class="metric-box">
+                                    <strong>4,567</strong>
+                                    <span>Active Youth Members</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>12,450</strong>
+                                    <span>Service Hours</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>156</strong>
+                                    <span>School Chapters</span>
+                                </div>
+                            </div>
+
+                            <h4>Join Youth Brigade</h4>
+                            <div class="donation-options">
+                                <button class="donate-option" onclick="window.location.href='volunteer.html'">Become a Youth Volunteer</button>
+                                <button class="donate-option" onclick="allocateDonation('youth', 500)">₱500 - Training Materials</button>
+                                <button class="donate-option" onclick="allocateDonation('youth', 2000)">₱2,000 - Chapter Support</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wellness Program -->
+                <div class="program-card" data-category="health" id="wellness">
+                    <div class="program-image">
+                        <img src="assets/images/Programs_Services Cards-6-Psychosocial support.jpg" alt="Wellness Support">
+                        <span class="program-badge health">Wellness</span>
+                    </div>
+                    <div class="program-content">
+                        <h3>Wellness & Psychosocial Support</h3>
+                        <p class="program-excerpt">Mental health services and psychosocial support for disaster survivors and vulnerable communities.</p>
+                        <div class="program-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>3,248 Beneficiaries</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-brain"></i>
+                                <span>89 Counselors</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary expand-btn" onclick="toggleProgramDetails(this)">
+                            Learn More <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="program-details">
+                            <h4>Program Overview</h4>
+                            <p>Recognizing that disasters affect mental health as much as physical wellbeing, our Wellness program provides professional psychosocial support to help individuals and communities recover from trauma and build resilience.</p>
+                            
+                            <h4>Services Provided</h4>
+                            <ul>
+                                <li>Individual and group counseling sessions</li>
+                                <li>Psychological first aid training for frontliners</li>
+                                <li>Stress management and coping skills workshops</li>
+                                <li>Support groups for disaster survivors and families</li>
+                                <li>Mental health awareness campaigns</li>
+                                <li>Referral services to specialized mental health professionals</li>
+                            </ul>
+
+                            <h4>Program Reach</h4>
+                            <div class="impact-metrics">
+                                <div class="metric-box">
+                                    <strong>3,248</strong>
+                                    <span>Individuals Counseled</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>456</strong>
+                                    <span>Support Sessions</span>
+                                </div>
+                                <div class="metric-box">
+                                    <strong>89</strong>
+                                    <span>Trained Counselors</span>
+                                </div>
+                            </div>
+
+                            <h4>Support Mental Health Services</h4>
+                            <div class="donation-options">
+                                <button class="donate-option" onclick="allocateDonation('wellness', 500)">₱500 - Workshop Materials</button>
+                                <button class="donate-option" onclick="allocateDonation('wellness', 2000)">₱2,000 - Counseling Session</button>
+                                <button class="donate-option" onclick="allocateDonation('wellness', 5000)">₱5,000 - Training Program</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Allocation Tracker -->
+    <section class="donation-tracker-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Support Makes a Difference</h2>
+                <p>Track how donations are allocated across our programs</p>
+            </div>
+            <div class="tracker-container" id="donationTracker">
+                <p class="tracker-empty">Select a donation option from any program above to see how your contribution helps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Make a Direct Impact?</h2>
+                <p>Join our volunteer programs and be part of the solution</p>
+                <div class="cta-buttons">
+                    <a href="volunteer.html" class="btn btn-primary btn-large">Become a Volunteer</a>
+                    <a href="contact.html" class="btn btn-outline btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Bayanihan Relief Corps</span>
+                    </div>
+                    <p>Building resilient communities through compassion, solidarity, and humanitarian action.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="volunteer.html">Join as Volunteer</a></li>
+                        <li><a href="contact.html">Partner with Us</a></li>
+                        <li><a href="contact.html">Corporate Sponsorship</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Mabini Street, Ermita, Manila</li>
+                        <li><i class="fas fa-phone"></i> (02) 8123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bayanihanrelief.org</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bayanihan Relief Corps. All rights reserved. | Educational Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/programs.js"></script>
+</body>
+</html>

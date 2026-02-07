@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Bayanihan Relief Corps</title>
+    <meta name="description" content="Admin dashboard for managing Bayanihan Relief Corps data and submissions.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-page">
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-container">
+            <div class="login-header">
+                <i class="fas fa-hands-helping"></i>
+                <h1>Bayanihan Relief Corps</h1>
+                <h2>Admin Dashboard</h2>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="adminPassword">
+                        <i class="fas fa-lock"></i> Admin Password
+                    </label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword('adminPassword', this)" title="Show password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="error-message" id="loginError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <p class="login-hint">Default password: admin123</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="admin-dashboard hidden">
+        <!-- Admin Navigation -->
+        <nav class="admin-navbar">
+            <div class="admin-nav-content">
+                <div class="admin-logo">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>BRC Admin</span>
+                </div>
+                <div class="admin-actions">
+                    <button class="btn btn-sm btn-secondary" onclick="changePassword()">
+                        <i class="fas fa-key"></i> Change Password
+                    </button>
+                    <a href="index.html" class="btn btn-sm btn-outline">
+                        <i class="fas fa-home"></i> Back to Site
+                    </a>
+                    <button class="btn btn-sm btn-danger" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="admin-container">
+            <!-- Dashboard Overview -->
+            <div class="dashboard-header">
+                <h1>Dashboard Overview</h1>
+                <p>Manage all submissions and data for Bayanihan Relief Corps</p>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="admin-stats-grid">
+                <div class="admin-stat-card">
+                    <div class="stat-icon volunteers">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-value" id="totalVolunteers">0</div>
+                        <div class="stat-label">Volunteer Registrations</div>
+                    </div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="stat-icon events">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-value" id="totalEventRegs">0</div>
+                        <div class="stat-label">Event Registrations</div>
+                    </div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="stat-icon contacts">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-value" id="totalContacts">0</div>
+                        <div class="stat-label">Contact Messages</div>
+                    </div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="stat-icon donations">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="stat-details">
+                        <div class="stat-value" id="totalDonations">0</div>
+                        <div class="stat-label">Donation Allocations</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Management Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab-btn active" data-tab="volunteers">
+                    <i class="fas fa-users"></i> Volunteers
+                </button>
+                <button class="admin-tab-btn" data-tab="events">
+                    <i class="fas fa-calendar-check"></i> Event Registrations
+                </button>
+                <button class="admin-tab-btn" data-tab="contacts">
+                    <i class="fas fa-envelope"></i> Contact Messages
+                </button>
+                <button class="admin-tab-btn" data-tab="donations">
+                    <i class="fas fa-hand-holding-heart"></i> Donations
+                </button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="admin-content">
+                <!-- Volunteers Tab -->
+                <div class="admin-tab-content active" id="volunteers-tab">
+                    <div class="tab-header">
+                        <h2><i class="fas fa-users"></i> Volunteer Registrations</h2>
+                        <div class="tab-actions">
+                            <input type="text" class="search-input" id="volunteerSearch" placeholder="Search volunteers...">
+                            <button class="btn btn-sm btn-success" onclick="exportData('volunteers', 'csv')">
+                                <i class="fas fa-file-csv"></i> Export CSV
+                            </button>
+                            <button class="btn btn-sm btn-primary" onclick="exportData('volunteers', 'json')">
+                                <i class="fas fa-file-code"></i> Export JSON
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="clearData('volunteers')">
+                                <i class="fas fa-trash"></i> Clear All
+                            </button>
+                        </div>
+                    </div>
+                    <div class="data-table-container">
+                        <table class="data-table" id="volunteersTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Location</th>
+                                    <th>Interests</th>
+                                    <th>Date Registered</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="volunteersTableBody">
+                                <tr class="empty-state">
+                                    <td colspan="8">No volunteer registrations yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Event Registrations Tab -->
+                <div class="admin-tab-content" id="events-tab">
+                    <div class="tab-header">
+                        <h2><i class="fas fa-calendar-check"></i> Event Registrations</h2>
+                        <div class="tab-actions">
+                            <input type="text" class="search-input" id="eventSearch" placeholder="Search events...">
+                            <button class="btn btn-sm btn-success" onclick="exportData('eventRegistrations', 'csv')">
+                                <i class="fas fa-file-csv"></i> Export CSV
+                            </button>
+                            <button class="btn btn-sm btn-primary" onclick="exportData('eventRegistrations', 'json')">
+                                <i class="fas fa-file-code"></i> Export JSON
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="clearData('eventRegistrations')">
+                                <i class="fas fa-trash"></i> Clear All
+                            </button>
+                        </div>
+                    </div>
+                    <div class="data-table-container">
+                        <table class="data-table" id="eventsTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Event Name</th>
+                                    <th>Event Date</th>
+                                    <th>Participant Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Type</th>
+                                    <th>Date Registered</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="eventsTableBody">
+                                <tr class="empty-state">
+                                    <td colspan="9">No event registrations yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Contact Messages Tab -->
+                <div class="admin-tab-content" id="contacts-tab">
+                    <div class="tab-header">
+                        <h2><i class="fas fa-envelope"></i> Contact Messages</h2>
+                        <div class="tab-actions">
+                            <input type="text" class="search-input" id="contactSearch" placeholder="Search messages...">
+                            <button class="btn btn-sm btn-success" onclick="exportData('contactMessages', 'csv')">
+                                <i class="fas fa-file-csv"></i> Export CSV
+                            </button>
+                            <button class="btn btn-sm btn-primary" onclick="exportData('contactMessages', 'json')">
+                                <i class="fas fa-file-code"></i> Export JSON
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="clearData('contactMessages')">
+                                <i class="fas fa-trash"></i> Clear All
+                            </button>
+                        </div>
+                    </div>
+                    <div class="data-table-container">
+                        <table class="data-table" id="contactsTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Department</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    <th>Date Sent</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contactsTableBody">
+                                <tr class="empty-state">
+                                    <td colspan="9">No contact messages yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Donations Tab -->
+                <div class="admin-tab-content" id="donations-tab">
+                    <div class="tab-header">
+                        <h2><i class="fas fa-hand-holding-heart"></i> Donation Allocations</h2>
+                        <div class="tab-actions">
+                            <input type="text" class="search-input" id="donationSearch" placeholder="Search donations...">
+                            <button class="btn btn-sm btn-success" onclick="exportData('donations', 'csv')">
+                                <i class="fas fa-file-csv"></i> Export CSV
+                            </button>
+                            <button class="btn btn-sm btn-primary" onclick="exportData('donations', 'json')">
+                                <i class="fas fa-file-code"></i> Export JSON
+                            </button>
+                            <button class="btn btn-sm btn-danger" onclick="clearData('donations')">
+                                <i class="fas fa-trash"></i> Clear All
+                            </button>
+                        </div>
+                    </div>
+                    <div class="donation-summary" id="donationSummary"></div>
+                    <div class="data-table-container">
+                        <table class="data-table" id="donationsTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Program</th>
+                                    <th>Amount (₱)</th>
+                                    <th>Purpose</th>
+                                    <th>Date Allocated</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="donationsTableBody">
+                                <tr class="empty-state">
+                                    <td colspan="6">No donation allocations yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View Details Modal -->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content modal-large">
+            <button class="modal-close" onclick="closeDetailsModal()">&times;</button>
+            <div class="modal-header">
+                <h2 id="detailsTitle">Details</h2>
+            </div>
+            <div class="modal-body" id="detailsBody"></div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="modal" id="passwordModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePasswordModal()">&times;</button>
+            <div class="modal-header">
+                <h2>Change Admin Password</h2>
+            </div>
+            <div class="modal-body">
+                <form id="changePasswordForm">
+                    <span class="error-message" id="passwordChangeError"></span>
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password *</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" id="currentPassword" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword('currentPassword', this)" title="Show password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password *</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" id="newPassword" required minlength="6">
+                            <button type="button" class="toggle-password" onclick="togglePassword('newPassword', this)" title="Show password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm New Password *</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" id="confirmPassword" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword', this)" title="Show password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closePasswordModal()">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Change Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

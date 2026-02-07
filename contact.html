@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bayanihan Relief Corps</title>
+    <meta name="description" content="Get in touch with Bayanihan Relief Corps. Contact us for inquiries, partnerships, or support.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <span class="logo-text">Bayanihan Relief Corps</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="admin.html" class="admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help and answer your questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Main Office</h3>
+                    <p>123 Mabini Street, Ermita<br>Manila, 1000 Philippines</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Numbers</h3>
+                    <p>Landline: (02) 8123-4567<br>Mobile: +63 917 123 4567</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>General: info@bayanihanrelief.org<br>Volunteer: volunteer@bayanihanrelief.org</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-main-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions or suggestions? Fill out the form below and we'll get back to you within 24-48 hours.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="09XX-XXX-XXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactDepartment">Department *</label>
+                                <select id="contactDepartment" name="department" required>
+                                    <option value="">Select department</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="volunteer">Volunteer Programs</option>
+                                    <option value="donation">Donations & Partnerships</option>
+                                    <option value="programs">Program Information</option>
+                                    <option value="media">Media & Communications</option>
+                                    <option value="emergency">Emergency Response</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span>Subscribe to our newsletter for updates on programs and events</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Regional Offices -->
+                <div class="regional-offices">
+                    <h3>Regional Offices</h3>
+                    <p>Visit our regional chapters across the Philippines</p>
+                    
+                    <div class="office-list">
+                        <div class="office-item">
+                            <h4><i class="fas fa-building"></i> Luzon Regional Office</h4>
+                            <p><strong>Quezon City</strong><br>
+                            456 Commonwealth Avenue, Quezon City<br>
+                            Tel: (02) 8234-5678<br>
+                            <a href="mailto:luzon@bayanihanrelief.org">luzon@bayanihanrelief.org</a></p>
+                        </div>
+
+                        <div class="office-item">
+                            <h4><i class="fas fa-building"></i> Visayas Regional Office</h4>
+                            <p><strong>Cebu City</strong><br>
+                            789 Osmeña Boulevard, Cebu City<br>
+                            Tel: (032) 234-5678<br>
+                            <a href="mailto:visayas@bayanihanrelief.org">visayas@bayanihanrelief.org</a></p>
+                        </div>
+
+                        <div class="office-item">
+                            <h4><i class="fas fa-building"></i> Mindanao Regional Office</h4>
+                            <p><strong>Davao City</strong><br>
+                            321 J.P. Laurel Avenue, Davao City<br>
+                            Tel: (082) 234-5678<br>
+                            <a href="mailto:mindanao@bayanihanrelief.org">mindanao@bayanihanrelief.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="emergency-contact">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Emergency Hotline</h4>
+                        <p class="hotline-number">1-800-BAYANIHAN</p>
+                        <p>24/7 Emergency Response & Disaster Assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Operations Across the Philippines</h2>
+                <p>Explore our active relief operations and regional offices nationwide</p>
+            </div>
+            <div id="map" class="interactive-map"></div>
+            <div class="map-legend">
+                <div class="legend-item">
+                    <span class="legend-marker regional"></span>
+                    <span>Regional Offices</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-marker operations"></span>
+                    <span>Active Relief Operations</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-marker medical"></span>
+                    <span>Medical Missions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partner with Us</h2>
+                <p>Collaborate with Bayanihan Relief Corps to amplify your social impact</p>
+            </div>
+            <div class="partnership-grid">
+                <div class="partnership-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Corporate Partnerships</h3>
+                    <p>CSR programs, employee engagement, and matching donations</p>
+                    <a href="mailto:partnerships@bayanihanrelief.org" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="partnership-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>NGO Collaborations</h3>
+                    <p>Joint programs, resource sharing, and coordinated responses</p>
+                    <a href="mailto:partnerships@bayanihanrelief.org" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="partnership-card">
+                    <i class="fas fa-university"></i>
+                    <h3>Academic Institutions</h3>
+                    <p>Research partnerships, student volunteers, and internship programs</p>
+                    <a href="mailto:partnerships@bayanihanrelief.org" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="contactSuccessModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for contacting Bayanihan Relief Corps. We've received your message and will respond within 24-48 hours.</p>
+            <button class="btn btn-primary" onclick="closeContactSuccess()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Bayanihan Relief Corps</span>
+                    </div>
+                    <p>Building resilient communities through compassion, solidarity, and humanitarian action.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="volunteer.html">Join as Volunteer</a></li>
+                        <li><a href="contact.html">Partner with Us</a></li>
+                        <li><a href="contact.html">Corporate Sponsorship</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Mabini Street, Ermita, Manila</li>
+                        <li><i class="fas fa-phone"></i> (02) 8123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bayanihanrelief.org</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bayanihan Relief Corps. All rights reserved. | Educational Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

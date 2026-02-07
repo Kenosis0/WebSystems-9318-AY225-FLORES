@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Bayanihan Relief Corps</title>
+    <meta name="description" content="Join our volunteer community and make a difference in Filipino lives.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <span class="logo-text">Bayanihan Relief Corps</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html" class="admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header volunteer-header">
+        <div class="container">
+            <h1>Become a Volunteer</h1>
+            <p>Join 12,847 volunteers making a difference every day</p>
+        </div>
+    </section>
+
+    <!-- Why Volunteer Section -->
+    <section class="why-volunteer-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Volunteer with Us?</h2>
+                <p>Be part of something bigger than yourself</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Make Real Impact</h3>
+                    <p>Directly help communities in need through hands-on humanitarian work</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Build Community</h3>
+                    <p>Connect with like-minded Filipinos passionate about service</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Develop Skills</h3>
+                    <p>Gain valuable training in first aid, disaster response, and leadership</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Earn Recognition</h3>
+                    <p>Receive certificates and awards for your volunteer contributions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Registration Form -->
+    <section class="volunteer-form-section">
+        <div class="container">
+            <div class="form-intro">
+                <h2>Join Our Volunteer Community</h2>
+                <p>Complete the registration form below. The process takes about 5 minutes.</p>
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Personal Info</div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Skills & Interests</div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Confirmation</div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="volunteerForm" class="volunteer-form">
+                <!-- Step 1: Personal Information -->
+                <div class="form-step active" data-step="1">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" id="middleName" name="middleName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birthdate">Date of Birth *</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Prefer not to say</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Complete Address *</label>
+                        <input type="text" id="address" name="address" placeholder="House/Unit No., Street, Barangay" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City/Municipality *</label>
+                            <input type="text" id="city" name="city" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="province">Province *</label>
+                            <input type="text" id="province" name="province" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="09XX-XXX-XXXX" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-primary" onclick="nextStep()">Next Step <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Skills & Availability -->
+                <div class="form-step" data-step="2">
+                    <h3>Skills, Interests & Availability</h3>
+                    
+                    <div class="form-group">
+                        <label for="occupation">Occupation/Profession *</label>
+                        <input type="text" id="occupation" name="occupation" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Highest Educational Attainment *</label>
+                        <select id="education" name="education" required>
+                            <option value="">Select education level</option>
+                            <option value="highschool">High School</option>
+                            <option value="vocational">Vocational/Technical</option>
+                            <option value="college">College Undergraduate</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="doctorate">Doctorate</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Areas of Interest (Select all that apply) *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="disaster-response">
+                                <span>Disaster Response & Relief</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="health-services">
+                                <span>Health Services & Medical Missions</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="blood-donation">
+                                <span>Blood Donation Programs</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="livelihood">
+                                <span>Livelihood & Skills Training</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="youth-programs">
+                                <span>Youth Development Programs</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="psychosocial">
+                                <span>Psychosocial Support & Counseling</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="fundraising">
+                                <span>Fundraising & Events Management</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="admin">
+                                <span>Administrative & Logistics Support</span>
+                            </label>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Special Skills (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="medical">
+                                <span>Medical/Healthcare (Doctor, Nurse, Paramedic)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="first-aid">
+                                <span>First Aid & CPR Certified</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="driving">
+                                <span>Driving (with Valid License)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="communications">
+                                <span>Communications & Media</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="it">
+                                <span>IT & Technical Support</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="languages">
+                                <span>Multilingual (specify in comments)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Availability *</label>
+                        <select id="availability" name="availability" required>
+                            <option value="">Select your availability</option>
+                            <option value="weekdays">Weekdays (Mon-Fri)</option>
+                            <option value="weekends">Weekends Only</option>
+                            <option value="flexible">Flexible (Any day)</option>
+                            <option value="emergency">Emergency Response Only</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hours">Hours per Week *</label>
+                        <select id="hours" name="hours" required>
+                            <option value="">Select hours per week</option>
+                            <option value="1-5">1-5 hours</option>
+                            <option value="6-10">6-10 hours</option>
+                            <option value="11-20">11-20 hours</option>
+                            <option value="20+">20+ hours</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to volunteer? *</label>
+                        <textarea id="motivation" name="motivation" rows="4" required placeholder="Tell us about your motivation to serve..."></textarea>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reference">Emergency Contact Person *</label>
+                        <input type="text" id="reference" name="reference" placeholder="Name and contact number" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep()"><i class="fas fa-arrow-left"></i> Previous</button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep()">Next Step <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Confirmation -->
+                <div class="form-step" data-step="3">
+                    <h3>Review & Confirmation</h3>
+                    <div class="form-summary" id="formSummary"></div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label agreement">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <span>I agree to the <a href="#" onclick="openTerms(); return false;">Terms & Conditions</a> and consent to the collection of my personal data for volunteer management purposes. I understand that I may be contacted for volunteer opportunities and training programs.</span>
+                        </label>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep()"><i class="fas fa-arrow-left"></i> Previous</button>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-check"></i> Complete Registration
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for joining Bayanihan Relief Corps. Your volunteer application has been submitted.</p>
+            <div id="volunteerIdCard" class="volunteer-card"></div>
+            <div class="success-actions">
+                <button class="btn btn-primary" onclick="downloadVolunteerCard()">
+                    <i class="fas fa-download"></i> Download Volunteer ID
+                </button>
+                <button class="btn btn-secondary" onclick="closeSuccessModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volunteer Stats Dashboard -->
+    <section class="volunteer-stats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Volunteer Community</h2>
+                <p>See the incredible impact of our volunteer network</p>
+            </div>
+            <div class="volunteer-stats-grid">
+                <div class="volunteer-stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-target="12847">0</div>
+                    <div class="stat-label">Active Volunteers</div>
+                </div>
+                <div class="volunteer-stat-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="stat-number" data-target="487562">0</div>
+                    <div class="stat-label">Volunteer Hours</div>
+                </div>
+                <div class="volunteer-stat-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <div class="stat-number" data-target="2456">0</div>
+                    <div class="stat-label">Activities Completed</div>
+                </div>
+                <div class="volunteer-stat-card">
+                    <i class="fas fa-award"></i>
+                    <div class="stat-number" data-target="8945">0</div>
+                    <div class="stat-label">Certifications Issued</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Bayanihan Relief Corps</span>
+                    </div>
+                    <p>Building resilient communities through compassion, solidarity, and humanitarian action.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="volunteer.html">Join as Volunteer</a></li>
+                        <li><a href="contact.html">Partner with Us</a></li>
+                        <li><a href="contact.html">Corporate Sponsorship</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Mabini Street, Ermita, Manila</li>
+                        <li><i class="fas fa-phone"></i> (02) 8123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bayanihanrelief.org</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bayanihan Relief Corps. All rights reserved. | Educational Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
