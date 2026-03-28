@@ -1,99 +1,131 @@
-# WebSystems-9318-AY225 — Bayanihan Relief Corps
+# Web Systems - FLORES Portfolio
 
-A fully responsive NGO website built for the **Web Systems** course (9318-AY225) preliminary exam — **EXAM SET D: NGO**.
+This repository contains course projects for Web Systems (CCS 9318 AY225) by John Romel Flores.
 
-> **Disclaimer:** This website and its contents were created solely for educational purposes as a course requirement. All organization details, names, events, and data presented are not representative of any real entity.
+## Folder Structure
+
+### 📁 FLORES-PRELIMLAB
+**Bayanihan Relief Corps - NGO Website**
+- A fully responsive website built for an educational NGO organization
+- Includes pages for Home, About, Programs, Events, Volunteer Registration, Contact, and Admin Dashboard
+- Built with HTML5, CSS3, and vanilla JavaScript with advanced interactive features
+
+**Key Files:**
+- `index.html` - Main homepage with hero carousel and statistics
+- `about.html` - Organization history and leadership team
+- `programs.html` - Program showcases with category filtering
+- `events.html` - Event listings with search and registration modal
+- `volunteer.html` - Multi-step registration form with ID card generation
+- `contact.html` - Contact form with interactive Leaflet.js map
+- `admin.html` - Password-protected admin dashboard for data management
+- `css/` - Custom CSS styling with CSS variables and animations
+- `js/` - JavaScript modules for carousel, forms, storage, maps, and more
+- `data/` - JSON data files for events, programs, and team information
+- `README.md` - Project-specific documentation
+
+**Features:**
+- Auto-playing hero carousel with touch/swipe support
+- Animated statistics with scroll-triggered counters
+- Multi-step volunteer registration with validation
+- LocalStorage persistence for all form submissions
+- Admin dashboard with login protection and CSV/JSON export
+- Interactive map using Leaflet.js
+- Mobile-responsive design with hamburger navigation
 
 ---
 
-## � Prepared By
+### 📁 FLORES-MIDTERMLAB
+**Kotaku Gaming Web Scraper**
+- A web scraping project that extracts game data from Kotaku
+- Built with Python Flask backend and vanilla JavaScript frontend
+- Features interactive carousel, real-time search, and responsive gaming theme
 
-- **Name:** John Romel Flores  
-- **Course:** BSIT-GD 2nd Year  
+**Key Files:**
+- `start.py` - Automatic setup and startup script (run this first!)
+- `main.py` - Flask application entry point
+- `app/app.py` - Flask server with API endpoints
+- `app/scraper.py` - Web scraping logic using BeautifulSoup4
+- `app/config.py` - Configuration settings
+- `app/permission_checker.py` - Permission and validation utilities
+- `requirements.txt` - Python dependencies
+- `templates/index.html` - Web interface template
+- `static/js/script.js` - Client-side functionality
+- `static/style.css` - Responsive styling with dark gaming theme
+- `data/games.json` - Scraped game data (auto-generated)
+- `README.md` - Project-specific documentation
+
+**Features:**
+- 25 games scraped from Kotaku with 7 data fields each
+- Genre-based carousel interface
+- Real-time search functionality
+- Responsive dark gaming theme
+- One-command startup with automatic virtual environment setup
+
+---
+
+## Technologies Used
+
+### FLORES-PRELIMLAB
+- HTML5
+- CSS3 (with CSS Variables and Animations)
+- JavaScript (Vanilla) - ES6+
+- Leaflet.js (Interactive Maps)
+- LocalStorage (Client-side Persistence)
+
+### FLORES-MIDTERMLAB
+- Python 3.8+
+- Flask 2.3.3
+- BeautifulSoup4 4.12.2
+- Requests 2.31.0
+- Vanilla JavaScript
+
+---
+
+## How to Use
+
+### Running the Bayanihan Relief Corps Website
+1. Navigate to the FLORES-PRELIMLAB folder
+2. Open `index.html` in a web browser
+3. No installation required - all features work client-side
+
+### Running the Kotaku Gaming Web Scraper
+1. Navigate to the FLORES-MIDTERMLAB folder
+2. Run the startup script:
+   ```bash
+   python start.py
+   ```
+3. The script will automatically:
+   - Create a virtual environment
+   - Install dependencies from `requirements.txt`
+   - Scrape 25 games from Kotaku
+   - Start the Flask server at `http://localhost:5000`
+
+4. Open your browser and visit `http://localhost:5000` to view the scraper interface
+
+**Alternative Manual Setup:**
+```bash
+cd FLORES-MIDTERMLAB
+python -m venv venv
+venv\Scripts\activate  # On Windows
+pip install -r requirements.txt
+python main.py
+```
+
+---
+
+## Course Information
+- **Course:** Web Systems (CCS 9318 AY225)
+- **Institution:** UPHSD Molino
+- **Student:** John Romel Flores
 - **GitHub:** [Kenosis0](https://github.com/Kenosis0)
+- **Program:** BSIT-GD 2nd Year
 
 ---
 
-## �📄 Pages
+## Additional Notes
 
-| Page | File | Description |
-|------|------|-------------|
-| **Home** | `index.html` | Hero carousel, live statistics, featured campaigns, services grid |
-| **About** | `about.html` | Organization history timeline, mission/vision/values, leadership team |
-| **Programs** | `programs.html` | 6 program showcases with category filtering, expandable details, donation allocation |
-| **Events** | `events.html` | Upcoming/past event tabs with search & filter, registration modal, photo gallery |
-| **Volunteer** | `volunteer.html` | Multi-step registration form with validation and volunteer ID card generation |
-| **Contact** | `contact.html` | Contact form with department routing, regional offices, interactive Leaflet.js map |
-| **Admin** | `admin.html` | Password-protected dashboard to view, search, and export all submitted data |
+- **Disclaimer:** The Bayanihan Relief Corps website and its contents were created solely for educational purposes as a course requirement. All organization details, names, events, and data presented are not representative of any real entity.
 
----
+- **Port Issues:** If port 5000 is already in use when running the scraper, modify the port in `app/app.py` or check the project's detailed README for troubleshooting steps.
 
-## ✨ Key Features
-
-- **Hero Carousel** — Auto-playing image slider with touch/swipe support and keyboard navigation  
-- **Animated Statistics** — Scroll-triggered counters using `IntersectionObserver`  
-- **Multi-Step Forms** — Step-by-step volunteer registration with real-time validation  
-- **Interactive Map** — Leaflet.js map of the Philippines showing offices, operations, and medical missions  
-- **LocalStorage Persistence** — All form submissions (volunteers, events, contacts, donations) saved client-side  
-- **Admin Dashboard** — Login-protected panel with tabbed data views, search, CSV/JSON export, and password management  
-- **Category Filtering** — Filter programs and events by category with live search  
-- **Responsive Design** — Fully mobile-friendly layout with hamburger navigation  
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Semantic page structure |
-| **CSS3** | Custom design system with CSS variables, animations, and media queries |
-| **Vanilla JavaScript** | All interactivity — no frameworks |
-| **Leaflet.js 1.9.4** | Interactive map (CDN) |
-| **Font Awesome 6.4.0** | Icon library (CDN) |
-| **localStorage API** | Client-side data persistence |
-
----
-
-## 📁 Project Structure
-
-```
-├── index.html              # Home page
-├── about.html              # About page
-├── programs.html           # Programs & services
-├── events.html             # Events & campaigns
-├── volunteer.html          # Volunteer registration
-├── contact.html            # Contact & map
-├── admin.html              # Admin dashboard
-├── css/
-│   └── style.css           # Complete design system (~2600+ lines)
-├── js/
-│   ├── storage.js          # LocalStorage CRUD & data export
-│   ├── main.js             # Navigation, modals, scroll animations
-│   ├── carousel.js         # Hero carousel with autoplay & swipe
-│   ├── stats.js            # Animated stat counters
-│   ├── forms.js            # Form handling & validation
-│   ├── programs.js         # Program filtering & donation tracking
-│   ├── events.js           # Event tabs, search, filter & gallery
-│   ├── map.js              # Leaflet.js interactive map
-│   └── admin.js            # Dashboard login, data display & export
-├── data/
-│   ├── programs.json       # Program metadata
-│   ├── events.json         # Event listings & campaigns
-│   └── team.json           # Leadership, timeline & office data
-└── assets/
-    └── images/             # Hero slides, program cards, event gallery, portraits
-```
-
----
-
-## 🔐 Admin Access
-
-- **Default Password:** `admin123`
-- Navigate to the **Admin** page and enter the password to access the dashboard.
-- The password can be changed from within the dashboard.
-
----
-
-## 📝 License
-
-This project is for **educational purposes only** as part of the Web Systems preliminary examination. No real-world affiliation is intended or implied.
+- **Data Persistence:** The NGO website uses browser LocalStorage to save volunteer registrations, event participation, donations, and contact submissions. Clear browser cache to reset stored data.
