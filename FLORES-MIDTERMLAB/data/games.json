@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "source": "Kotaku",
+    "scraped_at": "2026-03-26T15:42:24.970678",
+    "total_games": 25,
+    "game_count": 25
+  },
+  "games": [
+    {
+      "title": "Hytale",
+      "platform_availability": "Linux, PC, Mac",
+      "developer": "Hypixel Studios",
+      "publisher": "Hypixel Studios",
+      "release_date": "January 12, 2026\n                    (2 months ago)",
+      "genre": "Role-playing (RPG), Adventure, Indie",
+      "features": "Hytale combines the scope of a sandbox with the depth of a roleplaying game, immersing players in a procedurally generated world where teetering towers and deep dungeons promise rich rewards throughout their adventures. Hytale supports everything from block-by-block construction to scripting and min",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Ghost of Yotei",
+      "platform_availability": "PS5",
+      "developer": "Sucker Punch Productions",
+      "publisher": "Sony Interactive Entertainment",
+      "release_date": "October 1, 2025\n                    (5 months ago)",
+      "genre": "Role-playing (RPG), Adventure",
+      "features": "The game takes place 300 years after Ghost of Tsushima. Set in the lands surrounding Mount Yōtei, a towering peak in the heart of Ezo, an area of Japan known as Hokkaido in present day.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Nioh 3",
+      "platform_availability": "PC, PS5",
+      "developer": "Team NINJA",
+      "publisher": "Koei Tecmo Games",
+      "release_date": "February 5, 2026\n                    (1 month ago)",
+      "genre": "Role-playing (RPG), Hack and slash/Beat 'em up, Adventure",
+      "features": "In the latest game in the dark samurai action RPG series “Nioh,” you will need to use both Samurai and Ninja combat styles in your battles against formidable yokai as you explore a thrilling open world.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Clair Obscur: Expedition 33",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Sandfall Interactive",
+      "publisher": "Kepler Interactive",
+      "release_date": "April 23, 2025\n                    (11 months ago)",
+      "genre": "Role-playing (RPG), Adventure, Indie",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Mewgenics",
+      "platform_availability": "PC",
+      "developer": "Edmund McMillen, Tyler Glaiel",
+      "publisher": "Edmund McMillen, Tyler Glaiel",
+      "release_date": "February 9, 2026\n                    (1 month ago)",
+      "genre": "Role-playing (RPG), Simulator, Turn-based strategy (TBS), Adventure, Indie",
+      "features": "From the creator of The Binding of Isaac, Super Meat Boy and The End is Nigh comes… Mewgenics! A game where you hoard, breed, train and set cats out on epic adventures through a sprawling world of complete chaos.Level up your team as you venture further and further from your home, collect unique ite",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "ARC Raiders",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Embark Studios",
+      "publisher": "Embark Studios",
+      "release_date": "October 29, 2025\n                    (4 months ago)",
+      "genre": "Shooter",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Marathon",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Bungie",
+      "publisher": "Bungie",
+      "release_date": "March 4, 2026\n                    (3 weeks ago)",
+      "genre": "Shooter",
+      "features": "A PvP-focused extraction shooter set on the mysterious planet of Tau Ceti IV, Marathon will see players inhabit the bodies of Runners, cybernetic mercenaries who have been designed to survive the planet’s harsh environments and explore the lost colony that once inhabited Tau Ceti’s surface. Players ",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Metroid Prime 4: Beyond",
+      "platform_availability": "Switch, Switch 2",
+      "developer": "Nintendo EPD Production Group No. 6, Retro Studios",
+      "publisher": "Nintendo",
+      "release_date": "December 3, 2025\n                    (3 months ago)",
+      "genre": "Shooter, Platform, Adventure",
+      "features": "Deadly sharpshooter Sylux has finally caught up with renowned bounty hunter Samus Aran! After an unexpected accident in the wake of their clash, Samus finds herself transported to Viewros— a mysterious planet once inhabited by an ancient race. Now she must explore this planet, all while battling the",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Death Stranding 2: On the Beach",
+      "platform_availability": "PC, PS5",
+      "developer": "Kojima Productions",
+      "publisher": "Kojima Productions, Sony Interactive Entertainment",
+      "release_date": "June 25, 2025\n                    (9 months ago)",
+      "genre": "Shooter, Adventure",
+      "features": "Embark on an inspiring mission of human connection beyond the UCA. Sam — with companions by his side — sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected?",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Romeo is a Dead Man",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Grasshopper Manufacture",
+      "publisher": "Grasshopper Manufacture",
+      "release_date": "February 10, 2026\n                    (1 month ago)",
+      "genre": "Shooter, Hack and slash/Beat 'em up, Adventure",
+      "features": "Latest ultra-violent sci-fi action title from Grasshopper Manufacture and Suda51.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Kirby Air Riders",
+      "platform_availability": "Switch 2",
+      "developer": "Bandai Namco Studios, Sora",
+      "publisher": "Nintendo",
+      "release_date": "November 19, 2025\n                    (4 months ago)",
+      "genre": "Racing, Adventure, Arcade",
+      "features": "Kirby Air Riders is the long-awaited sequel to Kirby Air Ride on the Gamecube.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Mario Kart World",
+      "platform_availability": "Switch 2",
+      "developer": "Nintendo EPD Production Group No. 9",
+      "publisher": "Nintendo",
+      "release_date": "June 4, 2025\n                    (9 months ago)",
+      "genre": "Racing, Adventure",
+      "features": "Put the pedal to the metal in a vast interconnected environment. Race seamlessly across connected courses like never before. Participate in the new knockout tour elimination mode, where you’ll barrel through back-to-back courses and checkpoints. And in free roam, it’s possible to go off the racetrac",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Sonic Racing: CrossWorlds",
+      "platform_availability": "PC, PS4, XONE, Switch, PS5, Series X|S, Switch 2",
+      "developer": "Sonic Team",
+      "publisher": "Sega",
+      "release_date": "September 24, 2025\n                    (6 months ago)",
+      "genre": "Racing, Sport, Adventure",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Deliver At All Costs",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Far Out Games",
+      "publisher": "Konami",
+      "release_date": "May 21, 2025\n                    (10 months ago)",
+      "genre": "Racing, Adventure, Indie, Arcade",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Wildgate",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Moonshot Games",
+      "publisher": "Dreamhaven",
+      "release_date": "July 21, 2025\n                    (8 months ago)",
+      "genre": "Shooter, Racing, Role-playing (RPG), Strategy, Adventure",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Resident Evil Requiem",
+      "platform_availability": "PC, PS5, Series X|S, Switch 2",
+      "developer": "Capcom Development Division 1",
+      "publisher": "Capcom",
+      "release_date": "February 26, 2026\n                    (3 weeks ago)",
+      "genre": "Shooter, Puzzle, Adventure",
+      "features": "Resident Evil Requiem is the ninth entry in the Resident Evil series. Experience terrifying survival horror with FBI analyst Grace Ashcroft, and dive into pulse-pounding action with legendary agent Leon S. Kennedy. Both of their journeys and unique gameplay styles intertwine into a heart-stopping, e",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Reanimal",
+      "platform_availability": "PC, PS5, Series X|S, Switch 2",
+      "developer": "Tarsier Studios",
+      "publisher": "THQ Nordic",
+      "release_date": "February 12, 2026\n                    (1 month ago)",
+      "genre": "Puzzle, Adventure",
+      "features": "The creators of Little Nightmares I & II have returned to take you on a darker, more terrifying journey than ever before. In this horror adventure game, a brother & sister go through hell to rescue their missing friends and escape the island that they used to call home.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "John Carpenter’s Toxic Commando",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Saber Interactive",
+      "publisher": "Focus Entertainment",
+      "release_date": "March 11, 2026\n                    (2 weeks ago)",
+      "genre": "Shooter, Adventure",
+      "features": "Take control of one of the commandos, team up with your friends and send the Sludge God and its horde of things-that-should-never-be back to the underworld. Choose the class that matches your playstyle, pile into your favorite ride, and unload an array of gunfire, grenades, special abilities, and fr",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Silent Hill f",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "NeoBards Entertainment",
+      "publisher": "Konami",
+      "release_date": "September 24, 2025\n                    (6 months ago)",
+      "genre": "Puzzle, Adventure",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Crisol: Theater of Idols",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Vermila Studios",
+      "publisher": "Blumhouse Games",
+      "release_date": "February 9, 2026\n                    (1 month ago)",
+      "genre": "Shooter, Adventure",
+      "features": "What would you do if your blood were your only weapon? How much would you sacrifice your life? Experience the unholy island of Tormentosa in this twisted first-person adventure full of horror and action where only your blood can be used to defeat the impious creatures that roam therein.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Tony Hawk’s Pro Skater 3+4",
+      "platform_availability": "PC, PS4, XONE, Switch, PS5, Series X|S, Switch 2",
+      "developer": "Iron Galaxy Studios",
+      "publisher": "Activision",
+      "release_date": "July 10, 2025\n                    (8 months ago)",
+      "genre": "Simulator, Sport",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Skate Story",
+      "platform_availability": "PC, Mac, PS5, Switch 2",
+      "developer": "Sam Eng",
+      "publisher": "Devolver Digital",
+      "release_date": "December 7, 2025\n                    (3 months ago)",
+      "genre": "Simulator, Sport, Adventure, Indie, Arcade",
+      "features": "Ollie, kickflip, and grind your way through the ash and smoke of the Underworld as you take on a seemingly impossible quest. Skate fast to destroy demons and save other tortured souls on your journey from a fragile beginner to a hardened skater.",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Inazuma Eleven: Victory Road",
+      "platform_availability": "PC, Android, iOS, PS4, Switch, PS5, Series X|S, Switch 2",
+      "developer": "LEVEL-5",
+      "publisher": "LEVEL-5",
+      "release_date": "November 13, 2025\n                    (4 months ago)",
+      "genre": "Role-playing (RPG), Sport",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "Rematch",
+      "platform_availability": "PC, PS5, Series X|S",
+      "developer": "Sloclap",
+      "publisher": "Kepler Interactive, Sloclap",
+      "release_date": "June 18, 2025\n                    (9 months ago)",
+      "genre": "Sport, Indie",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    },
+    {
+      "title": "EA Sports FC 26",
+      "platform_availability": "PC, PS4, XONE, Switch, PS5, Series X|S, Switch 2",
+      "developer": "EA Vancouver",
+      "publisher": "EA Sports",
+      "release_date": "September 25, 2025\n                    (6 months ago)",
+      "genre": "Simulator, Sport",
+      "features": "Not Available",
+      "thumbnail_image": "Not Available"
+    }
+  ]
+}

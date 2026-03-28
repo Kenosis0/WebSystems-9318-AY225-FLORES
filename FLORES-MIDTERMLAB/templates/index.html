@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kotaku Gaming Web Scraper - Explore 25 scraped games in a professional card interface organized by genre">
+    <title>Kotaku Gaming Web Scraper - Game Carousel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <h1 class="header-title">🎮 Kotaku Gaming Explorer</h1>
+                <p class="header-subtitle">Discover 25 Games from Kotaku Reviews & Articles - Organized by Genre</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+<section class="search-section">
+    <div class="search-container">
+        <div class="search-box">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search games by title, developer, platform..."
+                aria-label="Search games"
+            >
+            <button id="clearBtn" class="clear-btn" aria-label="Clear search">
+                ✕
+            </button>
+        </div>
+        <div class="results-info">
+            <span id="resultsCount" class="results-count">Showing 
+                <strong id="gameCount">{{ games|length }}</strong> games</span>
+        </div>
+    </div>
+</section>
+
+<section class="games-section">
+    {% if games %}
+        <div id="genresContainer" class="genres-carousel-container">
+            <!-- Genre carousel sections will be rendered here by JavaScript -->
+        </div>
+    {% else %}
+        <div class="empty-state">
+            <div class="empty-state-icon">📊</div>
+            <h2>No Games Loaded</h2>
+            <p>The scraper hasn't been run yet. To populate this page with games:</p>
+            <ol class="empty-state-steps">
+                <li>Run the scraper: <code>python -m app.scraper</code></li>
+                <li>Refresh this page</li>
+            </ol>
+            <p class="empty-state-note">See README.md for detailed setup instructions.</p>
+        </div>
+    {% endif %}
+</section>
+
+<!-- Modal Structure -->
+<div id="gameModal" class="modal-background">
+    <div class="modal-content">
+        <button id="modalClose" class="modal-close" aria-label="Close modal">✕</button>
+        <div class="modal-inner">
+            <div class="modal-details-section">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <div class="modal-fields">
+                    <div class="modal-field">
+                        <span class="modal-label">Developer</span>
+                        <span id="modalDeveloper" class="modal-value"></span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-label">Publisher</span>
+                        <span id="modalPublisher" class="modal-value"></span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-label">Release Date</span>
+                        <span id="modalReleaseDate" class="modal-value"></span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-label">Genre</span>
+                        <span id="modalGenre" class="modal-value"></span>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-label">Platforms</span>
+                        <div id="modalPlatforms" class="modal-platforms"></div>
+                    </div>
+                    <div class="modal-field">
+                        <span class="modal-label">Features</span>
+                        <p id="modalFeatures" class="modal-value modal-features-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <strong>Educational Project:</strong> Kotaku Gaming Web Scraper
+                </p>
+                <p class="footer-text footer-disclaimer">
+                    Built for WebSystems Course | Data scraped from Kotaku | 
+                    <a href="#" class="footer-link">View Legal Notice</a>
+                </p>
+                <p class="footer-text footer-credit">
+                    © 2026 | Developed as an educational midterm lab
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Initialize page with game data from template
+        document.addEventListener('DOMContentLoaded', function() {
+            const gamesData = {{ games|tojson }};
+            initializeApp(gamesData);
+        });
+    </script>
+</body>
+</html>
